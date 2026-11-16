@@ -1,0 +1,53 @@
+{
+ "ghdl": "GHDL 4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]",
+ "runs": [
+  {
+   "id": "alu",
+   "title": "ALU",
+   "testbench": "alu_tb",
+   "result": "pass",
+   "output": "simulation finished @7ns\n"
+  },
+  {
+   "id": "ram",
+   "title": "RAM",
+   "testbench": "ram_tb",
+   "result": "pass",
+   "output": "simulation finished @17ns\n"
+  },
+  {
+   "id": "register-file",
+   "title": "Register file",
+   "testbench": "register_file_tb",
+   "result": "pass",
+   "output": "simulation finished @17ns\n"
+  },
+  {
+   "id": "rom",
+   "title": "ROM and program counter",
+   "testbench": "instruction_memory_tb",
+   "result": "pass",
+   "output": "simulation finished @26ns\n"
+  }
+ ],
+ "sha256": {
+  "src/ALU.vhd": "d761f72b0cb7a1693b0028faa4a68577330c90bfb9ce4d28a91032b10050f6f3",
+  "src/RAM.vhd": "2d9673ec97b2b1d00d0eba8ee188603a6eccd7c0e82211356054ce9ffec8fee4",
+  "src/RegisterFile.vhd": "8a6f4192fb46d8dc8fee789089cb0890da1282f25e836926680a7c2e26053241",
+  "src/instructionMemory.vhd": "b5e5faca8d0702bf7fe7ae9305112ac4b727c7fbb10d9cdebebabc074c6714ae",
+  "testbench/alu_tb.vhd": "c3baa872070f51e059518f5457ba581aeedc8f01acf1a5787661ba72650f07e1",
+  "testbench/instruction_memory_tb.vhd": "5dd81a2fdc3e6b16008174e23b48971589156b586562dfaac32c1782829897c0",
+  "testbench/ram_tb.vhd": "afd701836b0554324e25a8e2bb98f23e834346bef37381e0bbc57c05fbc2de1f",
+  "testbench/register_file_tb.vhd": "f507b60141b8de79b465b599f476e887d81970ec193a550ad45ad5244b7d8ba0"
+ },
+ "outputs": {
+  "alu.json": "f3100d11e03d4d6f3f2329de2f509468c378825e3c61fab5856aacde6c4c99d6",
+  "ram.json": "b4731fb09e789d9dd659b1e4e31abb99393e643586c1b05c96edf48967bc7f80",
+  "register-file.json": "ff4606cc736d3e38a258d484587b89198be62a603355c13d58bc8ca4dbfbe918",
+  "rom.json": "dc04fd550a12fbc01c669f046e43ebd0cc5d95d1648d7b9b9356e825a3857212"
+ },
+ "tools": {
+  "vcd2json.py": "f10a87e06805029f30fc329d204f54bbde761eb3b5eb4f18d2c663ed5cb30281"
+ },
+ "image": "ubuntu:24.04@sha256:fe81560990fae86dc4743202b2cb4d3df98d0bcf949173cecef15ce1127ef852"
+}

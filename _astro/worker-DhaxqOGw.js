@@ -1,0 +1,3 @@
+(function(){let e=(e,t=[])=>postMessage(e,t);onmessage=async t=>{try{let{default:n}=await import(
+/* @vite-ignore */
+`/labs/sudoku/sudoku.js`),r=await n({onTrace:t=>e({type:`trace`,events:t},[t.buffer])}),i=performance.now(),a=r.ccall(`resolver`,`number`,[`string`],[t.data]),o=performance.now()-i;e({type:`done`,solutions:a,first:a?r.ccall(`solucion`,`string`,[`number`],[0]):``,steps:r.ccall(`pasos`,`number`,[],[]),ms:o})}catch{e({type:`error`})}}})();

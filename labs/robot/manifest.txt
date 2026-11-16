@@ -1,0 +1,10 @@
+Built by web/labs-src/robot/build.sh; rerun it to reproduce robot.wasm.
+Image: emscripten/emsdk:6.0.13@sha256:fb7864e398acfda863dfcea78b8bc8adad359fa60c6a0bbeb845931de64aa68a
+emcc: 6.0.13
+Firmware sources (sha256):
+a7ee94f7d0923974f949f683a534c4da20cb0e213068b591301f8de11bee6401  Core/Inc/robot_control.h
+b01ec0a7370b0c66db52b5c3d374c2c3658a1a3cb14d7af535d3f6df267c1d6f  Core/Src/robot_control.c
+Outputs (sha256):
+a55b9f9ca6b6de49327dcb640bd9ea8b91b2d80b312387d961895c372293810b  robot.wasm
+Build inputs (sha256):
+9da46bc82896cdabe535783aaff9f5efcd15759b9a4db5cb905870ce22cfe96e  wrapper.c
