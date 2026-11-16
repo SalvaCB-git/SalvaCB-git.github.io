@@ -1,0 +1,1 @@
+var e=`/_astro/styles.mQCA4v0P.css`;export{e as default};

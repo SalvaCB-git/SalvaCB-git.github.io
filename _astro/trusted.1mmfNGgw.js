@@ -1,0 +1,1 @@
+function e(e,t){let n=globalThis.trustedTypes?.createPolicy(e,{createHTML:t});return n?e=>n.createHTML(e):e=>e}export{e as t};
